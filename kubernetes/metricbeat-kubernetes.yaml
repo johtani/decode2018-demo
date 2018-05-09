@@ -100,37 +100,37 @@ spec:
           "-system.hostfs=/hostfs",
         ]
         env:
-        - name: ELASTICSEARCH_HOST
-          valueFrom:
-            secretKeyRef:
-              name: elastic
-              key: ELASTICSEARCH_HOST
-        - name: ELASTICSEARCH_PORT
-          valueFrom:
-            secretKeyRef:
-              name: elastic
-              key: ELASTICSEARCH_PORT
-        - name: KIBANA_HOST
-          valueFrom:
-            secretKeyRef:
-              name: elastic
-              key: KIBANA_HOST
-        - name: ELASTICSEARCH_USERNAME
-          valueFrom:
-            secretKeyRef:
-              name: elastic
-              key: ELASTIC_USERNAME
-        - name: ELASTICSEARCH_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: elastic
-              key: ELASTIC_PASSWORD
+#        - name: ELASTICSEARCH_HOST
+#          valueFrom:
+#            secretKeyRef:
+#              name: elastic
+#              key: ELASTICSEARCH_HOST
+#        - name: ELASTICSEARCH_PORT
+#          valueFrom:
+#            secretKeyRef:
+#              name: elastic
+#              key: ELASTICSEARCH_PORT
+#        - name: KIBANA_HOST
+#          valueFrom:
+#            secretKeyRef:
+#              name: elastic
+#              key: KIBANA_HOST
+#        - name: ELASTICSEARCH_USERNAME
+#          valueFrom:
+#            secretKeyRef:
+#              name: elastic
+#              key: ELASTIC_USERNAME
+#        - name: ELASTICSEARCH_PASSWORD
+#          valueFrom:
+#            secretKeyRef:
+#              name: elastic
+#              key: ELASTIC_PASSWORD
         - name: ELASTIC_CLOUD_ID
           valueFrom:
             secretKeyRef:
               name: elastic
               key: ELASTIC_CLOUD_ID
-        - name: 
+        - name: ELASTIC_CLOUD_AUTH
           valueFrom:
             secretKeyRef:
               name: elastic
@@ -232,31 +232,31 @@ spec:
           "-e",
         ]
         env:
-        - name: ELASTICSEARCH_HOST
-          valueFrom:
-            secretKeyRef:
-              name: elastic
-              key: ELASTICSEARCH_HOST
-        - name: ELASTICSEARCH_PORT
-          valueFrom:
-            secretKeyRef:
-              name: elastic
-              key: ELASTICSEARCH_PORT
-        - name: KIBANA_HOST
-          valueFrom:
-            secretKeyRef:
-              name: elastic
-              key: KIBANA_HOST
-        - name: ELASTICSEARCH_USERNAME
-          valueFrom:
-            secretKeyRef:
-              name: elastic
-              key: ELASTIC_USERNAME
-        - name: ELASTICSEARCH_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: elastic
-              key: ELASTIC_PASSWORD
+#        - name: ELASTICSEARCH_HOST
+#          valueFrom:
+#            secretKeyRef:
+#              name: elastic
+#              key: ELASTICSEARCH_HOST
+#        - name: ELASTICSEARCH_PORT
+#          valueFrom:
+#            secretKeyRef:
+#              name: elastic
+#              key: ELASTICSEARCH_PORT
+#        - name: KIBANA_HOST
+#          valueFrom:
+#            secretKeyRef:
+#              name: elastic
+#              key: KIBANA_HOST
+#        - name: ELASTICSEARCH_USERNAME
+#          valueFrom:
+#            secretKeyRef:
+#              name: elastic
+#              key: ELASTIC_USERNAME
+#        - name: ELASTICSEARCH_PASSWORD
+#          valueFrom:
+#            secretKeyRef:
+#              name: elastic
+#              key: ELASTIC_PASSWORD
         - name: ELASTIC_CLOUD_ID
           valueFrom:
             secretKeyRef:
