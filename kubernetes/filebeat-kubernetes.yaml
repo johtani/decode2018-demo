@@ -25,15 +25,10 @@ data:
         - type: kubernetes
           templates:
             - condition.contains:
-                kubernetes.container.image: modcluster
+                kubernetes.container.name: httpd
               config:
                 - module: apache2
                   access:
-                    prospector:
-                      type: docker
-                      containers.ids:
-                        - ${data.kubernetes.container.id}
-                  error:
                     prospector:
                       type: docker
                       containers.ids:
