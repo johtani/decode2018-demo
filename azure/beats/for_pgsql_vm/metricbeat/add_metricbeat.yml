@@ -1,0 +1,5 @@
+## processors
+processors:
+- add_cloud_metadata:
+
+
