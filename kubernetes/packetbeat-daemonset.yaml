@@ -18,7 +18,7 @@ data:
       include_additionals: true
 
     - type: http
-      ports: [30001]
+      ports: [80,30001]
 
     - type: pgsql
       ports: [5432]

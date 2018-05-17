@@ -33,6 +33,19 @@ data:
                       type: docker
                       containers.ids:
                         - ${data.kubernetes.container.id}
+            - condition.contains:
+                kubernetes.container.name: serverlog
+              config:
+                - type: docker
+                  fields:
+                    category: wildfly
+                  exclude_lines: ['^\t']
+                  multiline.pattern: '^[0-9]{4}-[0-9]{2}-[0-9]{2}'
+                  multiline.negate: true
+                  multiline.match: after
+                  pipeline: wildfly
+                  containers.ids:
+                    - ${data.kubernetes.container.id}
 
     processors:
       - add_cloud_metadata:
